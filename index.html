@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
     <title>StudyLabsIndia | MBBS in Europe | Guaranteed Placement</title>
     <!-- Google Fonts & simple CSS reset -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700;800&display=swap" rel="stylesheet">
     <!-- Font Awesome 6 (free) -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
@@ -167,7 +167,7 @@
             box-shadow: 0 2px 8px rgba(0,0,0,0.02);
         }
 
-        /* form style */
+        /* form style - SIMPLIFIED 3 fields */
         .form-card {
             background: #ffffff;
             border-radius: 32px;
@@ -178,7 +178,7 @@
         .form-group {
             margin-bottom: 1rem;
         }
-        .form-group input, .form-group select {
+        .form-group input {
             width: 100%;
             padding: 14px 18px;
             border-radius: 48px;
@@ -226,7 +226,7 @@
             text-align: center;
         }
 
-        /* ----- ENHANCED HEADER STYLES (StudyLabsIndia Logo) ----- */
+        /* ENHANCED HEADER STYLES (StudyLabsIndia Logo) */
         .site-header {
             background: #ffffff;
             box-shadow: 0 4px 20px rgba(0, 0, 0, 0.02), 0 1px 2px rgba(0, 0, 0, 0.03);
@@ -383,6 +383,7 @@
                 <div class="form-card" id="leadFormSection">
                     <h3 style="font-size: 1.6rem; margin-bottom: 8px;">Start Your MBBS Abroad Journey</h3>
                     <p style="margin-bottom: 20px; color:#4b5563;">No spam · Counsellors respond within 5 min</p>
+                    <!-- SIMPLIFIED FORM: only name, email, phone number using web3forms -->
                     <form id="web3form-lead" action="https://api.web3forms.com/submit" method="POST">
                         <!-- Web3Forms access key (Public demo key – replace with your own for production) -->
                         <input type="hidden" name="access_key" value="b0d6e7a5-9f3c-4a2d-8e1c-7f4b9a2c6d8e">
@@ -402,22 +403,6 @@
                                 <input type="tel" name="phone" value="999999999" placeholder="Mobile Number" style="flex:1;" required>
                             </div>
                             <small style="font-size: 12px; color:#6c757d;">Example: 999999999 (10 digits)</small>
-                        </div>
-                        <div class="form-group">
-                            <select name="course_interest" required>
-                                <option value="">Preferred Country / Budget</option>
-                                <option>Romania - Affordable</option>
-                                <option>Slovakia / Latvia - Mid Budget</option>
-                                <option>Czech / Hungary - Premium</option>
-                                <option>Not sure / Expert advice</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <select name="neet_status">
-                                <option>NEET Qualified / Appeared</option>
-                                <option>Preparing for NEET</option>
-                                <option>Other</option>
-                            </select>
                         </div>
                         <button type="submit" class="btn-primary submit-btn"><i class="fas fa-paper-plane"></i> Get Expert Guidance Now</button>
                         <p style="font-size: 12px; margin-top: 15px; text-align: center;">Your details are private. We don't spam.</p>
@@ -464,7 +449,7 @@
             <div style="text-align: center; margin: 20px 0 30px;"><button class="btn-primary" id="scrollToFormBtn2"><i class="fas fa-question-circle"></i> Confused which university is best for you?</button></div>
         </div>
 
-        <!-- Comparison table: Others vs FutureMBBS -->
+        <!-- Comparison table: Others vs FutureMBBS / StudyLabsIndia -->
         <div class="container" style="margin: 40px auto;">
             <h2 class="section-title">Others Just Offer Admission — We Make You a Doctor with Guaranteed Placement</h2>
             <table class="comparison-table">
@@ -497,7 +482,7 @@
             </div>
         </div>
 
-        <!-- Final CTA + form again (same style but inline) -->
+        <!-- Final CTA + simplified form again (only name, email, phone) -->
         <div class="container" style="margin: 50px auto; background: #F6F9FE; border-radius: 48px; padding: 40px 30px;">
             <div class="grid-2cols">
                 <div>
@@ -515,7 +500,6 @@
                         <div class="form-group">
                             <div class="phone-prefix"><span>+91</span><input type="tel" name="phone" value="999999999" placeholder="Mobile Number" required></div>
                         </div>
-                        <div class="form-group"><select name="preferred_country"><option>Select budget range / country</option><option>Affordable (Romania)</option><option>Mid-Budget (Slovakia/Latvia)</option><option>Premium (Czech/Hungary)</option></select></div>
                         <button type="submit" class="btn-primary submit-btn">Get Expert Guidance Now →</button>
                         <p style="font-size: 12px; margin-top: 10px;">Your details are private. We don't spam.</p>
                     </form>
