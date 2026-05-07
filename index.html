@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-    <title>MBBS in Europe | Guaranteed Placement | FutureMBBS India</title>
+    <title>StudyLabsIndia | MBBS in Europe | Guaranteed Placement</title>
     <!-- Google Fonts & simple CSS reset -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
     <!-- Font Awesome 6 (free) -->
@@ -72,10 +72,10 @@
             font-weight: 600;
             font-size: 1rem;
             cursor: pointer;
-            transition: 0.2s;
             display: inline-flex;
             align-items: center;
             gap: 8px;
+            transition: 0.2s;
             box-shadow: 0 2px 6px rgba(0,0,0,0.05);
         }
 
@@ -226,7 +226,96 @@
             text-align: center;
         }
 
+        /* ----- ENHANCED HEADER STYLES (StudyLabsIndia Logo) ----- */
+        .site-header {
+            background: #ffffff;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.02), 0 1px 2px rgba(0, 0, 0, 0.03);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            backdrop-filter: blur(0px);
+            border-bottom: 1px solid #eef2f6;
+        }
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0.9rem 24px;
+            max-width: 1280px;
+            margin: 0 auto;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .logo-area {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        .logo-icon {
+            background: linear-gradient(135deg, #0f3b5e 0%, #1b5a7a 100%);
+            width: 44px;
+            height: 44px;
+            border-radius: 14px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.7rem;
+            color: white;
+            box-shadow: 0 8px 14px -6px rgba(15,59,94,0.25);
+        }
+        .logo-text h1 {
+            font-size: 1.65rem;
+            font-weight: 800;
+            letter-spacing: -0.3px;
+            background: linear-gradient(120deg, #0f3b5e, #1e6f5c);
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+            line-height: 1.2;
+        }
+        .logo-text span {
+            font-size: 0.75rem;
+            font-weight: 500;
+            color: #5a6e7c;
+            display: block;
+            letter-spacing: 0.3px;
+        }
+        .nav-links {
+            display: flex;
+            gap: 28px;
+            align-items: center;
+        }
+        .nav-links a {
+            text-decoration: none;
+            font-weight: 500;
+            color: #2c3e4e;
+            transition: 0.2s;
+            font-size: 0.95rem;
+        }
+        .nav-links a:hover {
+            color: #0f3b5e;
+        }
+        .header-cta {
+            background: #0f3b5e;
+            color: white !important;
+            padding: 8px 20px;
+            border-radius: 40px;
+            background: #0f3b5e;
+        }
+        .header-cta:hover {
+            background: #0a2c46;
+            transform: translateY(-1px);
+        }
         @media (max-width: 780px) {
+            .header-container {
+                flex-direction: column;
+                padding: 12px 20px;
+            }
+            .nav-links {
+                gap: 20px;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
             .grid-2cols {
                 grid-template-columns: 1fr;
                 gap: 1.8rem;
@@ -234,17 +323,36 @@
             .section-title {
                 font-size: 1.8rem;
             }
-            .container {
-                padding: 0 20px;
-            }
         }
     </style>
 </head>
 <body>
 
+    <!-- ENHANCED HEADER with StudyLabsIndia Logo -->
+    <header class="site-header">
+        <div class="header-container">
+            <div class="logo-area">
+                <div class="logo-icon">
+                    <i class="fas fa-graduation-cap"></i>
+                </div>
+                <div class="logo-text">
+                    <h1>StudyLabsIndia</h1>
+                    <span>Medical Abroad · Guaranteed Placement</span>
+                </div>
+            </div>
+            <div class="nav-links">
+                <a href="#">Home</a>
+                <a href="#">Universities</a>
+                <a href="#">Placement</a>
+                <a href="#">Success</a>
+                <a href="#" class="header-cta"><i class="fas fa-phone-alt"></i> +91 999999999</a>
+            </div>
+        </div>
+    </header>
+
     <!-- 2026 intake ribbon / floating style -->
     <div style="background: #fef9e3; text-align: center; padding: 10px; font-weight: 600; font-size: 0.9rem;">
-        ⚡ 2026 Intake Now Open — Limited Seats
+        ⚡ 2026 Intake Now Open — Limited Seats | StudyLabsIndia Exclusive
     </div>
 
     <main>
@@ -276,11 +384,10 @@
                     <h3 style="font-size: 1.6rem; margin-bottom: 8px;">Start Your MBBS Abroad Journey</h3>
                     <p style="margin-bottom: 20px; color:#4b5563;">No spam · Counsellors respond within 5 min</p>
                     <form id="web3form-lead" action="https://api.web3forms.com/submit" method="POST">
-                        <!-- Web3Forms access key (Public test key – replace with your own for production) -->
+                        <!-- Web3Forms access key (Public demo key – replace with your own for production) -->
                         <input type="hidden" name="access_key" value="b0d6e7a5-9f3c-4a2d-8e1c-7f4b9a2c6d8e">
-                        <input type="hidden" name="subject" value="New MBBS Europe Lead from Landing Page">
+                        <input type="hidden" name="subject" value="New MBBS Europe Lead from StudyLabsIndia">
                         <input type="hidden" name="redirect" value="https://india.future-mbbs.com/thank-you">
-                        <!-- optional: allow bot check -->
                         <input type="hidden" name="botcheck" value="">
                         
                         <div class="form-group">
@@ -361,7 +468,7 @@
         <div class="container" style="margin: 40px auto;">
             <h2 class="section-title">Others Just Offer Admission — We Make You a Doctor with Guaranteed Placement</h2>
             <table class="comparison-table">
-                <thead><tr><th>Feature</th><th>Others</th><th>FutureMBBS</th></tr>
+                <thead><tr><th>Feature</th><th>Others</th><th>StudyLabsIndia</th></tr>
                 </thead>
                 <tbody>
                     <tr><td>Admission</td><td>Yes</td><td>Yes</td></tr>
@@ -396,12 +503,12 @@
                 <div>
                     <h2 class="section-title" style="font-size: 1.9rem;">Start Your MBBS Journey Today — Choose the Right University for Your Future</h2>
                     <p>Our counsellors will contact you within 5–10 minutes.</p>
-                    <div class="stat-card" style="background: white;">📞 +91 999999999 (sample helpline)</div>
+                    <div class="stat-card" style="background: white;">📞 +91 999999999 (StudyLabsIndia Helpline)</div>
                 </div>
                 <div>
                     <form id="web3form-bottom" action="https://api.web3forms.com/submit" method="POST">
                         <input type="hidden" name="access_key" value="b0d6e7a5-9f3c-4a2d-8e1c-7f4b9a2c6d8e">
-                        <input type="hidden" name="subject" value="New MBBS Europe Lead - bottom form">
+                        <input type="hidden" name="subject" value="New MBBS Europe Lead - bottom form StudyLabsIndia">
                         <input type="hidden" name="redirect" value="https://india.future-mbbs.com/thank-you">
                         <div class="form-group"><input type="text" name="name" placeholder="Full Name" required></div>
                         <div class="form-group"><input type="email" name="email" placeholder="Email Address" required></div>
@@ -419,14 +526,13 @@
 
     <footer>
         <div class="container">
-            <p>© 2025 FutureMBBS India — Guaranteed Placement in Europe | NMC Approved | 5,000+ Students Placed</p>
-            <p style="margin-top: 8px;"><i class="fas fa-phone-alt"></i> For Counselling: +91 999999999 (demo)</p>
+            <p><i class="fas fa-graduation-cap"></i> StudyLabsIndia — Guaranteed Placement in Europe | NMC Approved | 5,000+ Students Placed</p>
+            <p style="margin-top: 8px;"><i class="fas fa-phone-alt"></i> For Counselling: +91 999999999 (24/7 Support)</p>
         </div>
     </footer>
 
     <script>
-        // both forms use web3forms submit; prefill phone number will be 999999999 as visible
-        // Also scroll to form from buttons
+        // scroll to form
         const scrollBtn1 = document.getElementById('scrollToFormBtn');
         const scrollBtn2 = document.getElementById('scrollToFormBtn2');
         const formSection = document.getElementById('leadFormSection');
@@ -441,44 +547,33 @@
             });
         }
 
-        // additional validation: ensure phone number has at least 10 digits, but no forced change because prefilled with 999999999
+        // ensure phone prefill + basic validation
+        const allPhoneInputs = document.querySelectorAll('input[name="phone"]');
+        allPhoneInputs.forEach(input => {
+            if(input.value === '') input.value = '999999999';
+        });
+
         const forms = document.querySelectorAll('form[id^="web3form"]');
         forms.forEach(form => {
             form.addEventListener('submit', function(e) {
                 const phoneFields = form.querySelectorAll('input[name="phone"]');
                 let valid = true;
                 phoneFields.forEach(field => {
-                    let phoneVal = field.value.trim();
-                    // basic check if indian number style (10 digits)
-                    if(phoneVal.length < 8 || isNaN(phoneVal.replace(/\D/g, ''))) {
-                        // we allow only numeric cleaning, but just alert if too short
-                        let digitsOnly = phoneVal.replace(/\D/g,'');
-                        if(digitsOnly.length < 8 && digitsOnly.length > 0) {
-                            alert('Please enter a valid mobile number (minimum 8 digits)');
-                            e.preventDefault();
-                            valid = false;
-                        }
+                    let digitsOnly = field.value.trim().replace(/\D/g, '');
+                    if(digitsOnly.length < 8 && digitsOnly.length > 0) {
+                        alert('Please enter a valid mobile number (minimum 8 digits)');
+                        e.preventDefault();
+                        valid = false;
                     }
                 });
                 if(!valid) return;
-                // optional: web3forms will handle actual POST. But if any spam, good.
-                // show small loading message
                 const submitBtn = form.querySelector('button[type="submit"]');
                 if(submitBtn) {
                     submitBtn.innerHTML = '<i class="fas fa-spinner fa-pulse"></i> Sending...';
                     setTimeout(() => { submitBtn.disabled = true; }, 10);
                 }
-                // no redirect override since web3forms redirects based on 'redirect' param.
             });
         });
-
-        // For demo, also we ensure the phone number 999999999 is always set in any pre-filled field (already hardcoded in value)
-        // but in case any dynamic reset, we enforce that both phone fields carry that number by default
-        const allPhoneInputs = document.querySelectorAll('input[name="phone"]');
-        allPhoneInputs.forEach(input => {
-            if(input.value === '') input.value = '999999999';
-        });
     </script>
-    <!-- Note: The web3forms access_key used is a dummy public test pattern. In production, replace with your own key from web3forms.com -->
 </body>
 </html>
